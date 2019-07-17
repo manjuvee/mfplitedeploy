@@ -1,0 +1,15 @@
+{
+    "CFAPI_ENDPOINT": "https://api.ng.bluemix.net",
+    "CLOUDANT_ORCHESTRATOR_AUDIT_DBNAME": "mf-orchestrator-audit",
+    "CLOUDANT_ORCHESTRATOR_DBNAME": "mf-orchestrator",
+    "CLOUDANT_URL": "https://mobilefoundationdevops:f277ca424e3acf17a871f234fe320eedf2d6f43663a4128a9e3de936dcd3f4ca@mobilefoundationdevops.cloudant.com",
+    "CONTAINER_ENDPOINT": "https://containers-api.ng.bluemix.net/v3",
+    "FILESERVER_PATH": "https://mobilefoundation-fileserver.ng.bluemix.net",
+    "INTERVAL_SECONDS": "3600",
+    "NEW_RELIC_APP_NAME": "mobilefoundation-orchestrator.ng.bluemix.net",
+    "REGISTRY_PREFIX": "registry.ng.bluemix.net",
+    "ROUTE_DOMAIN": "mybluemix.net",
+    "SECGRP": "GRP1PRDN",
+    "SERVICE_VERSION": "20160620110200-1000",
+    "BROKER_PATH": "https://mobilefoundation-servicebroker.ng.bluemix.net"
+}

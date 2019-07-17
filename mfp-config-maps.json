@@ -1,0 +1,14 @@
+{
+    "apiVersion": "v1",
+    "data": {
+        "mfpf.properties": "MFPF_CLUSTER_MODE=Cloud\nMFPF_ADMIN_USER=admin\nMFPF_ADMIN_PASSWORD=admin"
+    },
+    "kind": "ConfigMap",
+    "metadata": {
+        "labels": {
+            "app": "mfp"
+        },
+        "name": "mfp-configmap",
+        "namespace": "default"
+    }
+}

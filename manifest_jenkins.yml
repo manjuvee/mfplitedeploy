@@ -1,0 +1,43 @@
+applications:
+- disk_quota: 2048M
+  host: {{mf_orchestrator_lite_host}}
+  name: MF_MobileFoundation-Lite-Orchestrator
+  path: .
+  domain: {{deploy_app_domain}}
+  instances: 3
+  memory: 2048M
+  env:
+    CLOUDANT_URL: {{{cloudant_url}}}
+    CLOUDANT_POOL_DB: {{cloudant_pool_db}}
+    REGION: {{region}}
+    CONTAINER_SERVICE: {{{constainer_service}}}
+    CLUSTER_NAME: {{cluster_name}}
+    ACCOUNT_ID: {{account_id}}
+    APIKEY: {{apikey}}
+    BASIC_AUTH: {{{basic_auth}}}
+    IAM_URL: {{{iam_url}}}
+    IMAGE: {{{image}}}
+    POSTGRESQL_HOST: {{{postgresql_host}}}
+    POSTGRESQL_USERNAME: {{postgresql_username}}
+    POSTGRRESQL_PASSWORD: {{postgresql_password}}
+    POSTGRESQL_PORT: {{postgresql_port}}
+    POSTGRESQL_DEFAULT_DBNAME: {{postgresql_defualt_dbname}}
+    ANALYTICS_DEPLOYMENT_DOMAIN: {{analytics_deployment_domain}}
+    ANALYTICS_DASHBOARD_POSTFIX: {{{analytics_dashboard_postfix}}}
+    ANALYTICS_DEFAULT_PLAN_ID: {{analytics_default_plan_id}}
+    ANALYTICS_SPACE_GUID: {{analytics_space_guid}}
+    ANALYTICS_ORG_GUID: {{analytics_org_guid}}
+    ANALYTICS_BROKER_URL: {{{analytics_broker_url}}}
+    ANALYTICS_DASHBOARD_URL: {{{analytics_dashboard_url}}}
+    MF_POOL_SIZE: 10
+    SERVICE_VERSION: 20160620110200-1000
+    SECGRP: {{security_group_name}}
+    BUILD_NUMBER: {{build_number}}
+    BUILD_SLUG: {{build_slug}}
+    BUILD_DATE: {{build_date}}
+    GIT_COMMIT: {{git_commit}}
+    GIT_SLUG: {{git_slug}}
+    BUILD_URL: {{build_url}}
+    DEPLOY_NUMBER: {{BUILD_NUMBER}}
+    DEPLOY_URL: {{{BUILD_URL}}}
+    JBP_CONFIG_LIBERTY : "app_state: false"

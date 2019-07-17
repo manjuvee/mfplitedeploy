@@ -1,0 +1,46 @@
+{
+    "apiVersion": "extensions/v1beta1",
+    "kind": "Deployment",
+    "metadata": {
+        "labels": {
+            "app": "mfp-appcenter"
+        },
+        "name": "mfpappcenter",
+        "namespace": "default"
+    },
+    "spec": {
+        "replicas": 1,
+        "template": {
+            "metadata": {
+                "labels": {
+                    "app": "mfpappcenter"
+                }
+            },
+            "spec": {
+                "containers": [{
+                    "image": "us.icr.io/mfprod/mfp-sever-lite:latest",
+                    "imagePullPolicy": "Always",
+                    "name": "mfpappcenter",
+                    "ports": [{
+                        "containerPort": 9080
+                    }, {
+                        "containerPort": 9443
+                    }],
+                    "resources": {
+                        "limits": {
+                            "cpu": "250m",
+                            "memory": "1Gi"
+                        },
+                        "requests": {
+                            "cpu": "250m",
+                            "memory": "1Gi"
+                        }
+                    }
+                }],
+                "imagePullSecrets": [{
+                    "name": "default-us-icr-io"
+                }]
+            }
+        }
+    }
+}
